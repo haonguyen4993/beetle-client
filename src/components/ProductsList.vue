@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 import ProductItem from './ProductItem'
 
 export default {
@@ -19,7 +18,7 @@ export default {
     }
   },
   mounted () {
-    axios
+    this.$http
       .get('http://localhost:3001/products')
       .then(response => (this.products = response.data))
   }

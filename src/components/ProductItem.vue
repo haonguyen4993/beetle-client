@@ -2,7 +2,7 @@
   <div class="w-full md:w-1/3 sm:w-1/2">
     <div class="relative m-4">
       <img class="rounded" :src="require(`@/assets/images/products/${product.image}`)">
-      <div class="a absolute inset-0 flex justify-between">
+      <div class="absolute inset-0 flex justify-between">
         <div class="flex-grow px-2 py-3">
           <ul>
             <li>
