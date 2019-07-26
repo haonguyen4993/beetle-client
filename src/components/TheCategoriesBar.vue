@@ -28,10 +28,16 @@ export default {
 
 <style>
 .item {
-  @apply px-4 py-2 uppercase text-gray-700 tracking-wide text-sm;
+  @apply px-4 py-2 rounded w-full text-center uppercase text-gray-700 tracking-wide text-sm;
 }
 .item:hover {
   @apply bg-gray-200;
+}
+
+@media (min-width: 768px) {
+  .item {
+    @apply w-auto
+  }
 }
 </style>
 
